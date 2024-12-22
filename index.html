@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hentai Dude</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="bg-black text-sm">
+    <header class="bg-darkGray-700">
+      <div class="max-w-screen-2xl mx-auto px-4">
+        <div class="flex items-center justify-between gap-4 pb-5">
+          <div class="flex-1 pt-[5px] flex justify-between lg:justify-normal gap-6 xl:gap-10 items-center pl-6">
+            <div id="menuIcon" class="lg:hidden">
+              <i class="fa fa-bars text-[21px] text-white" aria-hidden="true"></i>
+            </div>
+            <a href="#" class="w-[250px] h--[50px]" name="logo">
+              <img class="h-full w-full aspect-[5/1]" src="./assets/images/logo.png" alt="logo">
+            </a>
+            <div class="flex items-center gap-2 xl:gap-5">
+              <div id="searchSection" class="w-[85%] lg:w-auto transition-all ease-in duration-300 flex absolute left-0 top-0 z-20 translate-y-[-200%] pl-8 lg:pl-0 py-4 lg:py-0 pr-12 lg:pr-0 bg-darkGray-700 lg:translate-y-0 lg:static">
+                  <input id="searchInput" class="flex-1 rounded-tl-[3px] rounded-bl-[3px] w-[332px] lg:w-[403px] bg-darkGray-100 p-[2px] italic text-sm text-spanishGray placeholder:text-spanishGray border-l-[1px] border-t-[1px] border-b-[1px] focus:border-l-[1px] focus:border-t-[1px] focus:border-b-[1px] border-darkGray-100 focus:border-dimCharcol border-r-0 outline-none" type="text" id="searchporn" placeholder="Search 2608 videos...">
+                  <label class="w-[61px] bg-customOrange-400 flex items-center justify-center hover:cursor-pointer rounded-r-[4px]" for="searchporn"><i class="fa-solid fa-search text-smokyGray"></i></label>
+              </div>
+              <a href="" for="upload" class="hidden lg:flex items-center justify-center gap-2 w-[100px] text-silver cursor-pointer bg-jetBlack text-sm h-[25.6px] rounded-[4px]">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <span class=""> Upload</span>
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <div class="hidden lg:flex items-center gap-5 text-silver text-sm">
+              <button id="login" class="flex flex-col items-center justify-center hover:cursor-pointer"><i class="fas fa-sign-in-alt"></i> <span>Login</span></button>
+              <button id="sign-in" class="flex flex-col items-center justify-center hover:cursor-pointer"><i class="fa fa-user-plus" aria-hidden="true"></i> <span>Sign Up</span></button>
+            </div>
+            <div id="mobileSearch" class="flex items-center justify-center p-[13px] rounded-full lg:hidden">
+              <i class="fa-solid fa-search text-white text-[22px]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mt-[6px] flex items-stretch text-white uppercase lg:shadow-[inset_0_10px_0_-9px_#252525]">
+          <a class="hidden max-w-[297px] flex-1 lg:flex items-center justify-center p-[10px] border-b-2 border-b-sunsetOrange" href="#">
+            Home
+          </a>
+          <div class="self-center lg:self-stretch flex-1 w-full flex gap-[6px] lg:gap-0 justify-center lg:justify-around items-center">
+            <a class="py-[10px] lg:py-0 w-[120px] lg:w-auto rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2" href="">
+              <i class="fa-solid fa-gamepad"></i>
+              <span> Sex Games</span>
+            </a>
+            <a class="py-[10px] lg:py-0 w-[120px] lg:w-auto rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2" href="">
+              <i class="fa-solid fa-video"></i>
+              <span> Live Sex</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="modal" class="absolute top-0 left-0 right-0 bottom-0 z-10 flex items-center justify-center hidden">
+      <div id="backdrop" class="absolute top-0 left-0 right-0 bottom-0 bg-[#0000008c] hidden z-10"></div>
+      <form class="relative z-20 bg-charcolBlack opacity-80 min-w-[300px] max-w-[300px] min-h-[410px] px-4" action="">
+        <div id="closeFormBtn" class="absolute top-[5px] left-[10px]">
+          <i class="fa fa-times text-white hover:cursor-pointer text-[15px] font-bold" aria-hidden="true"></i>
+        </div>
+        <div class="flex flex-col gap-[25px]">
+          <h4 id="heading" class="text-white text-lg text-center font-medium py-[5px]">Sign In</h4>
+          <div id="formTabs" class="flex items-center justify-between gap-4 pb-2 text-xl">
+            <a id="tabOne" data-target="content1" href="" class="tab text-silver hover:text-white pb-[10px] flex items-center justify-center flex-1 border-b-2 border-b-charcolBlack  hover:border-sunsetOrange">
+              <i class="fas fa-sign-in-alt"></i>
+            </a>
+            <a id="tabTwo" data-target="content2" href="" class="tab flex-1 text-silver hover:text-white pb-[10px] flex items-center justify-center border-b-2 border-b-charcolBlack hover:border-sunsetOrange">
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </a>
+            <a id="tabThree" data-target="content3" href="" class="tab flex-1 text-silver hover:text-white pb-[10px] flex items-center justify-center border-b-2 border-b-charcolBlack hover:border-sunsetOrange">
+              <i class="fa-solid fa-question"></i>
+            </a>
+          </div>
+          <div id="tabOneContent" class="content hidden flex flex-col gap-5">
+            <input id="username-email" type="username or email" class="bg-graphite pl-[5px] leading-[30px] outline-none border border-dimGray placeholder:text-dimGray" placeholder="Username or Email" required>
+            <input id="password" type="password" class="bg-graphite pl-[5px] leading-[30px] outline-none border border-dimGray placeholder:text-dimGray" placeholder="Password" required>
+            <button class="text-white h-[30px] bg-sunsetOrange cursor-pointer text-sm font-semibold">Login</button>
+          </div>
+          <div id="tabTwoContent" class="content hidden flex flex-col gap-5">
+            <input id="username" type="username" class="bg-graphite pl-[5px] leading-[30px] outline-none focus:border focus:border-dimGray placeholder:text-dimGray" placeholder="Username" required>
+            <input id="content-two-password" type="password" class="bg-graphite pl-[5px] leading-[30px] outline-none focus:border focus:border-dimGray placeholder:text-dimGray" placeholder="Password" required>
+            <input id="email" type="email" class="bg-graphite pl-[5px] leading-[30px] outline-none focus:border focus:border-dimGray placeholder:text-dimGray" placeholder="email" required>
+            <p class="text-mediumGray text-sm"><span>By signing up, you agree to our</span>
+              <a class="text-lightGray hover:text-white hover:underline" href="">Terms and Conditions</a>
+            </p>
+            <button class="text-white h-[30px] bg-sunsetOrange cursor-pointer text-sm font-semibold">Sign Up</button>
+          </div>
+          <div id="tabThreeContent" class="content hidden flex flex-col gap-5">
+            <input id="content-three-email" type="email" class="bg-graphite pl-[5px] leading-[30px] outline-none focus:border focus:border-dimGray placeholder:text-dimGray" placeholder="email" required>
+            <button class="text-white h-[30px] bg-sunsetOrange cursor-pointer text-sm font-semibold">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="w-[300px] h-[100px] bg-[#1f1f1f] mx-auto my-[10px] lg:hidden">
+    </div>
+    <div id="sidebar" class="">
+
+    </div>
+    <main>
+      <section class="flex gap-1 my-8">
+        <!-- Left Side Start -->
+        <section class="text-white basis-[20%] shrink-0 hidden lg:flex flex-col gap-4">
+          <!-- Video Type -->
+          <ul class="border border-darkGray-20 bg-darkGray-600">
+            <li class="capitalize text-base font-semibold text-white p-2 bg-darkGray-400">video type</li>
+            <li class="capitalize text-base font-semibold text-darkGray-200 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center gap-3"><span><img src="./assets/images/un-censored2.png" alt=""></span>Censored</a>
+            </li>
+            <li class="capitalize text-base font-semibold text-darkGray-200 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center gap-3"><span><img src="./assets/images/un-censored1.png" alt=""></span>Uncensored</a>
+            </li>
+          </ul>
+          <!-- premium -->
+          <ul class="border border-darkGray-20 bg-darkGray-600">
+            <li class="flex capitalize text-base font-semibold text-white p-2 bg-darkGray-400">Premium Partners</li>
+            <li class="capitalize text-base font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="">Free space</a>
+            </li>
+            <li class="capitalize text-base font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="">Free space</a>
+            </li>
+          </ul>
+          <div class="border border-darkGray-20 bg-darkGray-600">
+            <!-- Sort -->
+          <ul>
+            <li class="capitalize text-base font-semibold text-white p-2 bg-darkGray-400">Sort By</li>
+            <li class="capitalize text-base font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href=""class="flex items-center gap-3"><span><img src="./assets/icons/sort-alphabetical-descending-icon.svg" alt=""></span>Name </a>
+            </li>
+            <li class="capitalize text-base font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center gap-3"><span><img src="./assets/icons/mdi--clock.svg" alt=""></span>Newest</a>
+            </li>
+            <li class="capitalize text-base font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center gap-3"><span><img class="fill-darkGray-30" src="./assets/icons/mdi--eye.svg" alt=""></span>Most Viewed</a>
+            </li>
+            <li class="capitalize text-base font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center gap-3"><span><img class="fill-darkGray-30" src="./assets/icons/mdi--chat.svg" alt=""></span>Most Discussed</a>
+            </li>
+            <li class="capitalize text-base font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center gap-3"><span><img class="fill-darkGray-30" src="./assets/icons/mdi--cards-heart.svg" alt=""></span>Most Fapped</a>
+            </li>
+          </ul>
+          <!-- Categories -->
+          <div>
+            <h1 class="capitalize text-base font-semibold text-white p-2 bg-darkGray-400">Categories</h1>
+           <ul class="max-h-[378px] overflow-x-hidden">
+            <li data-tab="148" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>1080p</span>148</a>
+            </li>
+            <li data-tab="152" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>3D</span>152</a>
+            </li>
+            <li data-tab="2040" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Age Difference</span>240</a>
+            </li>
+            <li data-tab="285" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Ahegao</span>285</a>
+            </li>
+            <li data-tab="553" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Anal</span>553</a>
+            </li>
+            <li data-tab="76" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Big breast</span>76</a>
+            </li>
+            <li data-tab="219" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Big tits</span>219</a>
+            </li>
+            <li data-tab="89" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Blonde</span>89</a>
+            </li>
+            <li data-tab="246" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Blowjob</span>246</a>
+            </li>
+            <li data-tab="573" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Bondage</span>573</a>
+            </li>
+            <li data-tab="96" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Classic</span>96</a>
+            </li>
+            <li data-tab="87" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Cosplay</span>87</a>
+            </li>
+            <li data-tab="316" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Creampie</span>316</a>
+            </li>
+            <li data-tab="123" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Dark skin</span>123</a>
+            </li>
+            <li data-tab="136" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Doggy style</span>136</a>
+            </li>
+            <li data-tab="137" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Facial</span>137</a>
+            </li>
+            <li data-tab="177" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Fantasy</span>177</a>
+            </li>
+            <li data-tab="168" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Fingering</span>168</a>
+            </li>
+            <li data-tab="692" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Forced</span>692</a>
+            </li>
+            <li data-tab="62" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Futa</span>62</a>
+            </li>
+            <li data-tab="116" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Futanari</span>116</a>
+            </li>
+            <li data-tab="365" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Gangbang</span>365</a>
+            </li>
+            <li data-tab="105" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Group sex</span>105</a>
+            </li>
+            <li data-tab="106" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Handjob</span>106</a>
+            </li>
+            <li data-tab="67" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Hard</span>67</a>
+            </li>
+            <li data-tab="388" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Harem</span>388</a>
+            </li>
+            <li data-tab="263" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Incest</span>263</a>
+            </li>
+            <li data-tab="65" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center justify-between gap-3"><span>Inflation</span>65</a>
+            </li>
+           </ul>
+          </div>
+          <!--Top 10 Series This week -->
+          <div>
+            <h1 class="capitalize text-base font-semibold text-white p-2 bg-darkGray-400 flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+              </svg>
+              Categories</h1>
+           <ul>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Eiken Eikenbu Yori Ai O Komete</a>
+            </li>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Hajimete No Hitozuma</a>
+            </li>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Chikan Juunin Tai</a>
+            </li>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Taboo Charming Mother</a>
+            </li>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Megachu</a>
+            </li>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Castle Fantasia Seima Taisen</a>
+            </li>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Gloria Kindan No Ketsuzoku</a>
+            </li>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Magical Girl Elena</a>
+            </li>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Kyonyuu Daikazoku Saimin</a>
+            </li>
+            <li data-tab="tab1" class="text-sm font-semibold text-darkGray-30 p-2 hover:bg-darkGray-400">
+              <a href="" class="flex items-center"><span class="w-6 h-6"><img src="./assets/icons/medal-with-ribbon.svg" alt=""></span>Hump Bang!</a>
+            </li>
+           </ul>
+          </div>
+          </div>
+        </section>
+        <!-- Left Side End -->
+
+        <!-- Right Side Start -->
+        <section class="px-6">
+          <div id="tab1" class="flex flex-col gap-10">
+            <div>
+              <div
+                class="flex flex-wrap text-base md:text-lg text-white font-bold gap-2 items-center mb-2"
+              >
+                <svg
+                  enable-background="new 0 0 1200 1200"
+                  fill="#fff"
+                  height="24"
+                  viewBox="0 0 1200 1200"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m381.64 1200c-245.861-138.566-310.591-269.722-273.583-448.852 27.321-132.271 116.782-239.886 125.36-371.903 38.215 69.544 54.183 119.691 58.453 192.364 121.543-148.914 201.861-355.063 206.617-571.609 0 0 316.575 186.01 337.348 466.98 27.253-57.913 40.972-149.892 13.719-209.504 81.757 59.615 560.293 588.838-64.818 942.524 117.527-228.838 30.32-537.611-173.739-680.218 13.628 61.319-10.265 290.021-100.542 390.515 25.014-167.916-23.8-238.918-23.8-238.918s-16.754 94.054-81.758 189.065c-59.36 86.762-100.49 178.847-23.257 339.556z"
+                  />
+                </svg>
+                Hot Hentai Videos In
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 640 480"
+                >
+                  <path fill="#bd3d44" d="M0 0h640v480H0" />
+                  <path
+                    stroke="#fff"
+                    stroke-width="37"
+                    d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640"
+                  />
+                  <path fill="#192f5d" d="M0 0h364.8v258.5H0" />
+                  <marker id="flagUm4x30" markerHeight="30" markerWidth="30">
+                    <path fill="#fff" d="m14 0l9 27L0 10h28L5 27z" />
+                  </marker>
+                  <path
+                    fill="none"
+                    marker-mid="url(#flagUm4x30)"
+                    d="m0 0l16 11h61h61h61h61h60L47 37h61h61h60h61L16 63h61h61h61h61h60L47 89h61h61h60h61L16 115h61h61h61h61h60L47 141h61h61h60h61L16 166h61h61h61h61h60L47 192h61h61h60h61L16 218h61h61h61h61h60z"
+                  />
+                </svg>
+                United States
+              </div>
+              <!-- Card container -->
+              <div class="grid grid-cols-1 custom-md:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 place-content-center">
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col gap-1 justify-between rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Toshoshitsu No Kanojo Seiso Na Kimi Ga Ochiru Made - Episode 2"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/toshoshitsu-no-kanojo-seiso-na-kimi-ga-ochiru-made-2-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >Toshoshitsu No Kanojo Seiso Na Kimi Ga Ochiru Made ...</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col gap-1 justify-between rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Eternity Shin Ya No Nurekoi Channel - Episode 3"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/eternity-shin-ya-no-nurekoi-channel-3-cover.jpg"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >Eternity Shin Ya No Nurekoi Channel - Episode 3</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col gap-1 justify-between rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Ookami-San-Wa-Taberaretai-Season-1"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/ookami-san-wa-taberaretai-season-1-cover.jpg"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                    <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >ookami-san-wa-taberaretai-season-1</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Ryoujoku-Joshi-Gakuen-2"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/ryoujoku-joshi-gakuen-2-cover.jpg"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >ryoujoku-joshi-gakuen-2</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="kussetsu-1"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/kussetsu-1-cover.jpg"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >kussetsu-1</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Futabu-2-Ep-1"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/futabu-2-ep-1-cover.jpg"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >futabu-2-ep-1</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Humiliated-Wives-1"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/humiliated-wives-1-cover.jpg"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >humiliated-wives-1</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Gakuen-Saimin-Reido-Ep-3"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/gakuen-saimin-reido-ep-3-cover.jpg"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >gakuen-saimin-reido-ep-3</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Midnight-Sleazy-Train-Ep-3"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/midnight-sleazy-train-ep-3-cover.jpg"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >midnight-sleazy-train-ep-3</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="City-Of-Sin"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/city-of-sin-cover.jpg"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >city-of-sin</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="flex flex-wrap text-base md:text-lg text-white font-bold gap-2 items-center mb-2"
+              >
+              Recently Featured Hentai Videos
+              </div>
+              <!-- Card container -->
+              <div class="grid grid-cols-1 custom-md:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 place-content-center">
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col gap-1 justify-between rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Natsu-Ga-Owaru-Made-Natsu-No-Owari"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/natsu-ga-owaru-made-natsu-no-owari-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >natsu-ga-owaru-made-natsu-no-owari-Episod2</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col gap-1 justify-between rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Mugoku-No-kuni-No-Alice-2"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/mugoku-no-kuni-no-alice-2-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >mugoku-no-kuni-no-alice-2</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col gap-1 justify-between rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Natsu-Ga-Owaru-Made-Natsu-No-Owari-1"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/natsu-ga-owaru-made-natsu-no-owari-1-cover-1.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                    <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >natsu-ga-owaru-made-natsu-no-owari-1</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="enjo-kouhai-9"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/enjo-kouhai-9-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >enjo-kouhai-episond 9</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="kateikyoushi-x-Saimin-2-Episode-2"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/kateikyoushi-x-saimin-2-episode-2-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >kateikyoushi-x-saimin-2-episode-2</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Konomi-Ja-Nai-Kedo-2"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/konomi-ja-nai-kedo-2-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >konomi-ja-nai-kedo- Episode 2</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Nocturnal-2"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/nocturnal-2-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >nocturnal-episode 2</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="kyonyuu-Onna-Shikan-Sennou-Saimin-2"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/kyonyuu-onna-shikan-sennou-saimin-2-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >kyonyuu-onna-shikan-sennou-saimin- episode 2</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Natsu-Ga-Owaru-Made-Natsu-No-Owari-1"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/natsu-ga-owaru-made-natsu-no-owari-1-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >natsu-ga-owaru-made-natsu-no-owari-1</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="p-[5px] bg-darkGray-400 flex flex-col justify-between gap-1 rounded-sm"
+                >
+                  <a
+                    href="#"
+                    title="Tsuma-o-dousoukai-ni-ikasetara-1"
+                  >
+                    <div class="overflow-hidden w-full rounded-sm relative">
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="./assets/images/tsuma-o-dousoukai-ni-ikasetara-1-cover.png"
+                        alt=""
+                      />
+                      <div
+                        class="w-full h-full bg-darkGray-50 absolute top-0 left-0 transition-opacity duration-250 ease-[initial] opacity-0 hover:opacity-100 group"
+                      >
+                        <img
+                          class="absolute top-1/2 left-1/2 w-0 h-0 group-hover:w-12 group-hover:h-12 transform -translate-x-1/2 -translate-y-1/2 transition-[width,height] duration-250 ease-[initial]"
+                          src="./assets/images/icon-play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-sm text-white font-medium hover:text-customOrange-400 text-center capitalize"
+                    >tsuma-o-dousoukai-ni-ikasetara-1</a
+                  >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+                        />
+                      </svg>
+                      85K
+                    </span>
+                    <span
+                      class="text-darkGray-500 text-sm font-normal flex items-center gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                        />
+                      </svg>
+                      41
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab2"></div>
+          <div id="tab3"></div>
+          <div id="tab4"></div>
+          <div id="tab5"></div>
+          <!-- Pagination -->
+          <div class="flex items-center justify-center">
+            <ul class="flex flex-wrap justify-center   gap-4 mt-20">
+              <li class="text-xl text-white bg-darkGray-400 hover:bg-darkGray-20 rounded-[3px] px-5 py-2">
+                <a href="" class="flex items-center gap-1">
+                  <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="10" viewBox="0 -960 960 960" width="10" fill="#fff"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                  Prev
+                </a>
+              </li>
+              <li class="text-xl text-white bg-darkGray-400 hover:bg-darkGray-20 rounded-[3px]  px-5 py-2">
+                <a href="" class="flex items-center">1</a>
+              </li>
+              <li class="text-xl text-white bg-darkGray-400 hover:bg-darkGray-20 rounded-[3px]  px-5 py-2">
+                <a href="" class="flex items-center">2</a>
+              </li>
+              <li class="text-xl text-white bg-darkGray-400 hover:bg-darkGray-20 rounded-[3px]  px-5 py-2">
+                <a href="" class="flex items-center">3</a>
+              </li>
+              <li class="text-xl text-white bg-darkGray-400 hover:bg-darkGray-20 rounded-[3px]  px-5 py-2">
+                <a href="" class="flex items-center">4</a>
+              </li>
+              <li class="text-xl text-white">...</li>
+              <li class="text-xl text-white bg-darkGray-400 hover:bg-darkGray-20 rounded-[3px]  px-5 py-2">
+                <a href="" class="flex items-center">131</a>
+              </li>
+              <li class="text-xl text-white bg-darkGray-400 hover:bg-darkGray-20 rounded-[3px] px-5 py-2">
+                <a href="" class="flex items-center gap-1">
+                  Next
+                  <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="10px" fill="#fff"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+                
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Right Side End -->
+      </section>
+    </main>
+    <footer class="bg-darkGray-600">
+      <div class="max-w-[660px] m-auto p-6">
+        <p class="text-darkGray-300 text-sm leading-[17px]">
+          hentaidude.com is the best source of uncensored hentai, we are
+          streaming the top quality hentai collection in our domain. We've
+          tagged precisely all of our hentai videos so you can get the best
+          related videos. Here is the place where you can find the best hentai
+          categories. Our anime hentai website is built for mobile devices, and
+          serves the best hentai available on the web.
+        </p>
+      </div>
+      <div class="max-w-[1280px] m-auto pb-6 md:p-6">
+        <div
+          class="hidden md:flex flex-wrap items-center justify-center lg:justify-between"
+        >
+          <div class="text-darkGray-200 basis-1/4 self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase">INFORMATION</h1>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill=""
+                      d="m10.6 13.4l-2.15-2.15q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7L9.9 15.5q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z"
+                    />
+                  </svg>
+                  2257
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 uppercase cursor-pointer"
+                >
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="-2 0 19 19"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="cf-icon-svg"
+                  >
+                    <path
+                      d="M9.316 14.722a.477.477 0 0 1-.475.475H1.433a.477.477 0 0 1-.475-.475v-.863a.477.477 0 0 1 .475-.475h7.408a.476.476 0 0 1 .475.475zm-2.767-2.587a.552.552 0 0 1-.392-.163L2.96 8.776a.554.554 0 0 1 .784-.784L6.94 11.19a.554.554 0 0 1-.392.946zm7.33.992L9.435 8.682l1.085-1.084-3.173-3.173-2.97 2.97 3.173 3.172 1.102-1.101 4.445 4.445a.554.554 0 1 0 .784-.784zm-2.33-5.993a.552.552 0 0 1-.391-.162L7.96 3.775a.554.554 0 1 1 .784-.784l3.196 3.197a.554.554 0 0 1-.391.946z"
+                    />
+                  </svg>
+                  dmca
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M11.5 16.23h1v-5.653h-1zM12 9q.262 0 .439-.177q.176-.177.176-.438q0-.262-.177-.439T12 7.77t-.438.177t-.177.439t.177.438T12 9m0 11.962q-3.014-.895-5.007-3.651T5 11.1V5.692l7-2.615l7 2.615V11.1q0 3.454-1.993 6.21T12 20.963"
+                    />
+                  </svg>
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-darkGray-200 basis-1/4 self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase">
+              SUPPORT AND HELP
+            </h1>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill=""
+                      d="m10.6 13.4l-2.15-2.15q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7L9.9 15.5q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z"
+                    />
+                  </svg>
+                  2257
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-darkGray-200 basis-1/4 self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase">CONNECT</h1>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    xml:space="preserve"
+                    viewBox="0 0 16 16"
+                    id="facebook"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 5.5H9v-2a1 1 0 0 1 1-1h1V0H9a3 3 0 0 0-3 3v2.5H4V8h2v8h3V8h2l1-2.5z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M17.316 6.246q.011.244.011.488c0 4.99-3.797 10.742-10.74 10.742c-2.133 0-4.116-.625-5.787-1.697a7.58 7.58 0 0 0 5.588-1.562a3.78 3.78 0 0 1-3.526-2.621a3.86 3.86 0 0 0 1.705-.065a3.78 3.78 0 0 1-3.028-3.703v-.047a3.8 3.8 0 0 0 1.71.473a3.775 3.775 0 0 1-1.168-5.041a10.72 10.72 0 0 0 7.781 3.945a3.8 3.8 0 0 1-.097-.861a3.773 3.773 0 0 1 3.774-3.773a3.77 3.77 0 0 1 2.756 1.191a7.6 7.6 0 0 0 2.397-.916a3.8 3.8 0 0 1-1.66 2.088a7.6 7.6 0 0 0 2.168-.594a7.6 7.6 0 0 1-1.884 1.953"
+                    />
+                  </svg>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 54 54"
+                    id="discord"
+                  >
+                    <g>
+                      <path
+                        fill="#6487d7"
+                        d="M45.49,51.2l-9.74-12,2.71,2.43L11.8,41.49c-5.83,0-3.22-1.43-3.22-1.43V38.65l.12-24.54,0-6.18S7.46,3.65,11.83,2.87l-1.25,0H12L43.07,3h-.28c4.52.75,2.92,5.11,2.92,5.11ZM38.78,17.51c-.43-2.1-7.08-4.27-7.69-3.29.2.6,3.31.75,6.22,3.22-2.75-1.8-7-2-9.11-2.18l-.69.26h-.32V15h-.53c-2.08.13-6.28.59-9,2.37,2.93-2.44,6.08-2.57,6.29-3.17-.6-1-7.25,1.11-7.7,3.21,0,0-3.5,6.75-3,13.22,2,2.95,6.39,3.85,7.57,3.57a12,12,0,0,0,1.36-1.88s-3.28-2.16-4.09-3.66c1.75.93,3.34,1.95,8.64,2H28.1c5.3,0,6.95-1,8.7-1.89C36,30.25,32.72,32,32.72,32a7.64,7.64,0,0,0,1.34,2.08,9.15,9.15,0,0,0,7.6-3.4C42.22,24.21,38.78,17.51,38.78,17.51Z"
+                      ></path>
+                      <path
+                        fill="#7289da"
+                        d="M20.52 25.64a2.46 2.46 0 012.56-2.7c1.6 0 2.36 1.87 2.35 2.73 0 .7-.78 2.71-2.38 2.7A2.47 2.47 0 0120.52 25.64zM34.26 25.71A2.47 2.47 0 0031.73 23c-1.6 0-2.38 1.85-2.38 2.71 0 .7.75 2.72 2.35 2.73A2.48 2.48 0 0034.26 25.71z"
+                      ></path>
+                    </g>
+                  </svg>
+                  Discord
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-darkGray-200 basis-1/4 self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase md:ml-24">
+              PARTNERS
+            </h1>
+            <ul class="flex flex-col gap-2 md:ml-24">
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Videos</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">MrPornGeek</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Porn Comics</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Comics</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Porn</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Sex Games</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai List</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Sex</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Porn</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Uncensored Hentai</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Thepornlist</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Porn Games</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-darkGray-200 basis-1/4 -mt-[190px] self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase">
+              FEATURED VIDEOS
+            </h1>
+            <ul class="flex flex-col gap-2">
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hanime</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Haven</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Latest Hentai 2024</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Top Hentai Download</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div>
+            <img
+              class="w-full h-full object-cover object-center"
+              src="./assets/images/text-log.png"
+              alt=""
+            />
+          </div>
+          <p class="text-white text-sm">© 2024 Hentaidude.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
