@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hentai Dude</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="bg-black text-sm scroll-smooth">
+    <header class="bg-darkGray-700 fixed top-0 left-0 right-0 lg:static">
+      <div class="max-w-screen-2xl mx-auto px-4">
+        <div class="flex items-center justify-between gap-4 lg:pb-5">
+          <div class="flex-1 pt-[5px] flex justify-between lg:justify-normal gap-6 xl:gap-10 items-center lg:pl-6">
+            <div id="menuIcon" class="cursor-pointer flex items-center justify-center rounded-full lg:hidden">
+              <i class="fa fa-bars text-[21px] text-white" aria-hidden="true"></i>
+            </div>
+            <a href="#" class="w-[170px] sm:w-[200px] lg:w-[250px]" name="logo">
+              <img class="h-full w-full aspect-[5/1]" src="./assets/images/logo.png" alt="logo">
+            </a>
+            <div class="flex items-center gap-2 xl:gap-5">
+              <div id="searchSection" class="w-[75%] sm:w-[85%] lg:w-auto transition-all ease-in duration-300 flex absolute left-0 top-0 z-20 translate-y-[-200%] pl-4 md:pl-8 lg:pl-0 py-[11.2px] lg:py-0 pr-3 md:pr-12 lg:pr-0 bg-darkGray-700 lg:translate-y-0 lg:static">
+                  <input id="searchInput" class="flex-1 rounded-tl-[3px] rounded-bl-[3px] w-[332px] lg:w-[403px] bg-darkGray-100 p-[2px] italic text-sm text-spanishGray placeholder:text-spanishGray border-l-[1px] border-t-[1px] border-b-[1px] focus:border-l-[1px] focus:border-t-[1px] focus:border-b-[1px] border-darkGray-100 focus:border-dimCharcol border-r-0 outline-none" type="text" id="searchporn" placeholder="Search 2608 videos...">
+                  <label class="w-[61px] bg-customOrange-400 flex items-center justify-center hover:cursor-pointer rounded-r-[4px]" for="searchporn"><i class="fa-solid fa-search text-smokyGray"></i></label>
+              </div>
+              <a href="" for="upload" class="hidden lg:flex items-center justify-center gap-2 w-[100px] text-silver cursor-pointer bg-jetBlack text-sm h-[25.6px] rounded-[4px]">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <span class=""> Upload</span>
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <div class="hidden lg:flex items-center gap-5 text-silver text-sm">
+              <button id="login" class="flex flex-col items-center justify-center hover:cursor-pointer"><i class="fas fa-sign-in-alt"></i> <span>Login</span></button>
+              <button id="sign-in" class="flex flex-col items-center justify-center hover:cursor-pointer"><i class="fa fa-user-plus" aria-hidden="true"></i> <span>Sign Up</span></button>
+            </div>
+            <div id="mobileSearch" class="cursor-pointer flex items-center justify-center p-[13px] rounded-full lg:hidden">
+              <i class="fa-solid fa-search text-white text-[22px]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="lg:bg-darkGray-700">
+      <div class="max-w-screen-2xl mx-auto flex items-stretch text-white uppercase lg:shadow-[inset_0_10px_0_-9px_#252525]">
+        <a class="hidden lg:flex items-center justify-center p-[10px] px-8 lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="#">
+          Home
+        </a>
+        <div class="whitespace-nowrap bg-black lg:bg-transparent self-center lg:self-stretch w-full flex gap-[6px] lg:gap-4 justify-center lg:justify-around items-center flex-wrap lg:flex-nowrap mt-[54px] lg:mt-0">
+          <a class="py-[10px] lg:py-0 w-[120px] lg:w-full h-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="">
+            <i class="fa-solid fa-gamepad"></i>
+            <span> Sex Games</span>
+          </a>
+          <a class="py-[10px] lg:py-0 w-[120px] lg:w-full h-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="">
+            <i class="fa-solid fa-video"></i>
+            <span> Live Sex</span>
+          </a>
+          <a class="py-[10px] lg:py-0 w-[160px] lg:w-full h-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="">
+            <i class="fa-solid fa-video"></i>
+            <span>Free XXX Videos</span>
+          </a>
+          <a class="py-[10px] lg:py-0 w-[120px] lg:w-full h-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="">
+            <span>AI Jerk Off 🫦</span>
+          </a>
+        </div>
+        <a class="hidden max-w-[297px] flex-1 lg:flex items-center gap-2 justify-center p-[10px] border-b-2 border-b-sunsetOrange lg:shadow-[inset_10px_0_0px_-9px_#252525] whitespace-nowrap" href="#">
+            <i class="fa fa-search" aria-hidden="true"></i>
+           <span> Advanced Search</span>
+        </a>
+      </div>
+    </div>
+    <div class="">
+        <ul class="bg-[#1b1b1bd4] flex gap-2 justify-evenly text-ashGray ">
+            <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
+                <a href="">
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
+                <a href="">
+                    <i class="fa-solid fa-film"></i>
+                    <span>Studios</span>
+                </a>
+            </li>
+            <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px] mr-8">
+                <a href="">
+                    <i class="fa fa-ban" aria-hidden="true"></i>
+                    <span>Excluder</span>
+                </a>
+            </li>
+            <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
+                <a href="">
+                    <i class="fas fa-stream"></i>
+                    <span>Reset All</span>
+                </a>
+            </li>
+            <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
+                <a href="">
+                    <i class="fas fa-sort-amount-down"></i>
+                    <span>Sort</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="modal" class="absolute top-0 left-0 right-0 bottom-0 z-10 flex items-center justify-center hidden">
+      <div id="backdrop" class="fixed top-0 left-0 right-0 bottom-0 bg-[#0000008c] hidden z-10"></div>
+      <form class="fixed z-20 bg-charcolBlack opacity-80 min-w-[300px] max-w-[300px] min-h-[410px] px-4" action="">
+        <div id="closeFormBtn" class="absolute top-[5px] left-[10px]">
+          <i class="fa fa-times text-white hover:cursor-pointer text-[15px] font-bold" aria-hidden="true"></i>
+        </div>
+        <div class="flex flex-col gap-[25px]">
+          <h4 id="heading" class="text-white text-lg text-center font-medium py-[5px]">Sign In</h4>
+          <div id="formTabs" class="flex items-center justify-between gap-4 pb-2 text-xl">
+            <a id="tabOne" data-target="content1" href="" class="tab text-silver hover:text-white pb-[10px] flex items-center justify-center flex-1 border-b-2 border-b-charcolBlack  hover:border-sunsetOrange">
+              <i class="fas fa-sign-in-alt"></i>
+            </a>
+            <a id="tabTwo" data-target="content2" href="" class="tab flex-1 text-silver hover:text-white pb-[10px] flex items-center justify-center border-b-2 border-b-charcolBlack hover:border-sunsetOrange">
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </a>
+            <a id="tabThree" data-target="content3" href="" class="tab flex-1 text-silver hover:text-white pb-[10px] flex items-center justify-center border-b-2 border-b-charcolBlack hover:border-sunsetOrange">
+              <i class="fa-solid fa-question"></i>
+            </a>
+          </div>
+          <div id="tabOneContent" class="content hidden flex flex-col gap-5">
+            <input id="username-email" type="username or email" class="bg-graphite pl-[5px] leading-[30px] outline-none border border-dimGray placeholder:text-dimGray" placeholder="Username or Email" required>
+            <input id="password" type="password" class="bg-graphite pl-[5px] leading-[30px] outline-none border border-dimGray placeholder:text-dimGray" placeholder="Password" required>
+            <button class="text-white h-[30px] bg-sunsetOrange cursor-pointer text-sm font-semibold">Login</button>
+          </div>
+          <div id="tabTwoContent" class="content hidden flex flex-col gap-5">
+            <input id="username" type="username" class="bg-graphite pl-[5px] leading-[30px] outline-none focus:border focus:border-dimGray placeholder:text-dimGray" placeholder="Username" required>
+            <input id="content-two-password" type="password" class="bg-graphite pl-[5px] leading-[30px] outline-none focus:border focus:border-dimGray placeholder:text-dimGray" placeholder="Password" required>
+            <input id="email" type="email" class="bg-graphite pl-[5px] leading-[30px] outline-none focus:border focus:border-dimGray placeholder:text-dimGray" placeholder="email" required>
+            <p class="text-mediumGray text-sm"><span>By signing up, you agree to our</span>
+              <a class="text-lightGray hover:text-white hover:underline" href="">Terms and Conditions</a>
+            </p>
+            <button class="text-white h-[30px] bg-sunsetOrange cursor-pointer text-sm font-semibold">Sign Up</button>
+          </div>
+          <div id="tabThreeContent" class="content hidden flex flex-col gap-5">
+            <input id="content-three-email" type="email" class="bg-graphite pl-[5px] leading-[30px] outline-none focus:border focus:border-dimGray placeholder:text-dimGray" placeholder="email" required>
+            <button class="text-white h-[30px] bg-sunsetOrange cursor-pointer text-sm font-semibold">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="mt-[105px] sm:mt-[110px] w-[300px] h-[100px] bg-[#1f1f1f] mx-auto my-[10px] lg:hidden">
+    </div>
+    <main class="max-w-screen-2xl mx-auto px-4">
+      <section class="flex gap-1 my-4">
+        <!-- Left Side Start -->
+       
+        <section id="mobileLeft" class="h-svh overflow-y-auto fixed left-0 top-0 lg:static  text-white min-w-[242px] shrink-0 translate-x-[-200%] lg:translate-x-0 transition-transform ease-in duration-200 z-30 bg-black lg:hidden">
+          <div id="menuIconActive" class="search-active ml-2 mt-2 cursor-pointer flex items-center w-max justify-center p-[13px] rounded-full lg:hidden">
+            <i class="fa fa-bars text-[21px] text-white" aria-hidden="true"></i>
+          </div>
+          <div class="mt-[10px] w-full lg:hidden">
+            <a href="#" class="py-[15px] px-[16px] text-base font-medium text-white flex items-center gap-6">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <span>Home</span>
+            </a>
+            <div class="border-b border-b-darkGray-20">
+              <div class="py-[15px] px-[16px] text-base text-ashGray">
+                <p>ACCOUNT</p>
+              </div>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-flag" aria-hidden="true"></i>
+                <span>My Excluder</span>
+              </a>
+              <button id="login2" class="w-full py-[15px] px-[16px] flex gap-6 items-center text-white text-base font-medium cursor-pointer"><i class="fas fa-sign-in-alt"></i> <span>Login</span></button>
+              <button id="sign-in2" class="w-full py-[15px] px-[16px] flex gap-6 items-center text-white text-base font-medium cursor-pointer"><i class="fa fa-user-plus" aria-hidden="true"></i> <span>Sign Up</span></button>
+            </div>
+            <div class="">
+              <div class="py-[15px] px-[16px] text-base text-ashGray">
+                <p>VIDEO TYPE</p>
+              </div>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <span>Categories</span>
+              </a>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-flag" aria-hidden="true"></i>
+                <span>Censored</span>
+              </a>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-flag" aria-hidden="true"></i>
+                <span>Uncensored</span>
+              </a>              
+            </div>
+            <div class="">
+              <div class="py-[15px] px-[16px] text-base text-ashGray">
+                <p>SORT BY</p>
+              </div>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fas fa-sort-alpha-down"></i>
+                <span>Name</span>
+              </a>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa-solid fa-box-open"></i>
+                <span>Latest</span>
+              </a>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <span>Most Viewed</span>
+              </a>              
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-comment" aria-hidden="true"></i>
+                <span>Most Discussed</span>
+              </a>              
+            </div>
+            <div class="">
+              <div class="py-[15px] px-[16px] text-base text-ashGray">
+                <p>INFORMATION</p>
+              </div>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-check-square" aria-hidden="true"></i>
+                <span>2257</span>
+              </a>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-gavel" aria-hidden="true"></i>
+                <span>DMCA</span>
+              </a>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-user-secret" aria-hidden="true"></i>
+                <span>Privacy Policy</span>
+              </a>                           
+            </div>
+            <div class="">
+              <div class="py-[15px] px-[16px] text-base text-ashGray">
+                <p>SUPPORT AND HELP</p>
+              </div>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Contact Us</span>
+              </a>                     
+            </div>
+            <div class="">
+              <div class="py-[15px] px-[16px] text-base text-ashGray">
+                <p>CONNECT</p>
+              </div>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span>Facebook</span>
+              </a>                     
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa-brands fa-twitter"></i>
+                <span>Twitter</span>
+              </a>                     
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                <i class="fa-brands fa-discord"></i>
+                <span>Discord</span>
+              </a>                     
+            </div>
+            <div class="">
+              <div class="py-[15px] px-[16px] text-base text-ashGray">
+                <p>PARTNERS</p>
+              </div>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Hentai Videos
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                MrPornGeek
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Porn Comics
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Hentai Comics
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Hentai Porn
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                hentai sex games
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Hentai List
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Hentai Sex
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Hentai Porn
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Uncensored Hentai
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Thepornlist
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Porn Games
+              </a>                                      
+            </div>
+            <div class="">
+              <div class="py-[15px] px-[16px] text-base text-ashGray">
+                <p>FEATURED VIDEOS</p>
+              </div>
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Hanime
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Hentai Haven
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Gelbooru
+              </a>                                      
+              <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+                Danbooru
+              </a>                                                                         
+            </div>
+          </div>
+        </section>
+        <!-- Left Side End -->
+
+        <!-- Right Side Start -->
+      
+        <!-- Right Side End -->
+      </section>
+    </main>
+    <div class="w-[320px] h-[270px] mx-auto bg-[#1f1f1f] lg:hidden my-[23px] p-[10px]">
+
+    </div>
+    <footer class="bg-darkGray-600">
+      <div class="max-w-screen-2xl mx-auto px-4">
+        <div
+          class="hidden md:flex flex-wrap items-center justify-center lg:justify-between"
+        >
+          <div class="text-darkGray-200 basis-1/4 self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase">INFORMATION</h1>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill=""
+                      d="m10.6 13.4l-2.15-2.15q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7L9.9 15.5q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z"
+                    />
+                  </svg>
+                  2257
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 uppercase cursor-pointer"
+                >
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="-2 0 19 19"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="cf-icon-svg"
+                  >
+                    <path
+                      d="M9.316 14.722a.477.477 0 0 1-.475.475H1.433a.477.477 0 0 1-.475-.475v-.863a.477.477 0 0 1 .475-.475h7.408a.476.476 0 0 1 .475.475zm-2.767-2.587a.552.552 0 0 1-.392-.163L2.96 8.776a.554.554 0 0 1 .784-.784L6.94 11.19a.554.554 0 0 1-.392.946zm7.33.992L9.435 8.682l1.085-1.084-3.173-3.173-2.97 2.97 3.173 3.172 1.102-1.101 4.445 4.445a.554.554 0 1 0 .784-.784zm-2.33-5.993a.552.552 0 0 1-.391-.162L7.96 3.775a.554.554 0 1 1 .784-.784l3.196 3.197a.554.554 0 0 1-.391.946z"
+                    />
+                  </svg>
+                  dmca
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M11.5 16.23h1v-5.653h-1zM12 9q.262 0 .439-.177q.176-.177.176-.438q0-.262-.177-.439T12 7.77t-.438.177t-.177.439t.177.438T12 9m0 11.962q-3.014-.895-5.007-3.651T5 11.1V5.692l7-2.615l7 2.615V11.1q0 3.454-1.993 6.21T12 20.963"
+                    />
+                  </svg>
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-darkGray-200 basis-1/4 self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase">
+              SUPPORT AND HELP
+            </h1>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill=""
+                      d="m10.6 13.4l-2.15-2.15q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7L9.9 15.5q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z"
+                    />
+                  </svg>
+                  2257
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-darkGray-200 basis-1/4 self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase">CONNECT</h1>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    xml:space="preserve"
+                    viewBox="0 0 16 16"
+                    id="facebook"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 5.5H9v-2a1 1 0 0 1 1-1h1V0H9a3 3 0 0 0-3 3v2.5H4V8h2v8h3V8h2l1-2.5z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M17.316 6.246q.011.244.011.488c0 4.99-3.797 10.742-10.74 10.742c-2.133 0-4.116-.625-5.787-1.697a7.58 7.58 0 0 0 5.588-1.562a3.78 3.78 0 0 1-3.526-2.621a3.86 3.86 0 0 0 1.705-.065a3.78 3.78 0 0 1-3.028-3.703v-.047a3.8 3.8 0 0 0 1.71.473a3.775 3.775 0 0 1-1.168-5.041a10.72 10.72 0 0 0 7.781 3.945a3.8 3.8 0 0 1-.097-.861a3.773 3.773 0 0 1 3.774-3.773a3.77 3.77 0 0 1 2.756 1.191a7.6 7.6 0 0 0 2.397-.916a3.8 3.8 0 0 1-1.66 2.088a7.6 7.6 0 0 0 2.168-.594a7.6 7.6 0 0 1-1.884 1.953"
+                    />
+                  </svg>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="flex gap-6 text-sm hover:text-customOrange-400 fill-darkGray-200 hover:fill-customOrange-400 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 54 54"
+                    id="discord"
+                  >
+                    <g>
+                      <path
+                        fill="#6487d7"
+                        d="M45.49,51.2l-9.74-12,2.71,2.43L11.8,41.49c-5.83,0-3.22-1.43-3.22-1.43V38.65l.12-24.54,0-6.18S7.46,3.65,11.83,2.87l-1.25,0H12L43.07,3h-.28c4.52.75,2.92,5.11,2.92,5.11ZM38.78,17.51c-.43-2.1-7.08-4.27-7.69-3.29.2.6,3.31.75,6.22,3.22-2.75-1.8-7-2-9.11-2.18l-.69.26h-.32V15h-.53c-2.08.13-6.28.59-9,2.37,2.93-2.44,6.08-2.57,6.29-3.17-.6-1-7.25,1.11-7.7,3.21,0,0-3.5,6.75-3,13.22,2,2.95,6.39,3.85,7.57,3.57a12,12,0,0,0,1.36-1.88s-3.28-2.16-4.09-3.66c1.75.93,3.34,1.95,8.64,2H28.1c5.3,0,6.95-1,8.7-1.89C36,30.25,32.72,32,32.72,32a7.64,7.64,0,0,0,1.34,2.08,9.15,9.15,0,0,0,7.6-3.4C42.22,24.21,38.78,17.51,38.78,17.51Z"
+                      ></path>
+                      <path
+                        fill="#7289da"
+                        d="M20.52 25.64a2.46 2.46 0 012.56-2.7c1.6 0 2.36 1.87 2.35 2.73 0 .7-.78 2.71-2.38 2.7A2.47 2.47 0 0120.52 25.64zM34.26 25.71A2.47 2.47 0 0031.73 23c-1.6 0-2.38 1.85-2.38 2.71 0 .7.75 2.72 2.35 2.73A2.48 2.48 0 0034.26 25.71z"
+                      ></path>
+                    </g>
+                  </svg>
+                  Discord
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-darkGray-200 basis-1/4 self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase md:ml-24">
+              PARTNERS
+            </h1>
+            <ul class="flex flex-col gap-2 md:ml-24">
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Videos</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">MrPornGeek</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Porn Comics</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Comics</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Porn</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Sex Games</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai List</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Sex</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Porn</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Uncensored Hentai</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Thepornlist</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Porn Games</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-darkGray-200 basis-1/4 -mt-[190px] self-start">
+            <h1 class="font-semibold text-base mb-3 uppercase">
+              FEATURED VIDEOS
+            </h1>
+            <ul class="flex flex-col gap-2">
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hanime</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Hentai Haven</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Latest Hentai 2024</a>
+              </li>
+              <li class="text-sm hover:text-customOrange-400 cursor-pointer">
+                <a href="">Top Hentai Download</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="w-[77px] lg:w-auto">
+            <img
+              class="w-full h-full object-cover object-center"
+              src="./assets/images/text-log.png"
+              alt=""
+            />
+          </div>
+          <p class="text-white text-sm">© 2024 Hentaidude.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
+<div class="">
+  <div class="py-[15px] px-[16px] text-base text-ashGray">
+    <p>INFORMATION</p>
+  </div>
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    <i class="fa fa-check-square" aria-hidden="true"></i>
+    <span>2257</span>
+  </a>
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    <i class="fa fa-gavel" aria-hidden="true"></i>
+    <span>DMCA</span>
+  </a>
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    <i class="fa fa-user-secret" aria-hidden="true"></i>
+    <span>Privacy Policy</span>
+  </a>                           
+</div>
+<div class="">
+  <div class="py-[15px] px-[16px] text-base text-ashGray">
+    <p>SUPPORT AND HELP</p>
+  </div>
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <span>Contact Us</span>
+  </a>                     
+</div>
+<div class="">
+  <div class="py-[15px] px-[16px] text-base text-ashGray">
+    <p>CONNECT</p>
+  </div>
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    <i class="fa-brands fa-facebook-f"></i>
+    <span>Facebook</span>
+  </a>                     
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    <i class="fa-brands fa-twitter"></i>
+    <span>Twitter</span>
+  </a>                     
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    <i class="fa-brands fa-discord"></i>
+    <span>Discord</span>
+  </a>                     
+</div>
+<div class="">
+  <div class="py-[15px] px-[16px] text-base text-ashGray">
+    <p>PARTNERS</p>
+  </div>
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Hentai Videos
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    MrPornGeek
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Porn Comics
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Hentai Comics
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Hentai Porn
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    hentai sex games
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Hentai List
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Hentai Sex
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Hentai Porn
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Uncensored Hentai
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Thepornlist
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Porn Games
+  </a>                                      
+</div>
+<div class="">
+  <div class="py-[15px] px-[16px] text-base text-ashGray">
+    <p>FEATURED VIDEOS</p>
+  </div>
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Hanime
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Hentai Haven
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Gelbooru
+  </a>                                      
+  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
+    Danbooru
+  </a>                                                                         
+</div>

@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'graphite': '#2b2b2b',
+        'charcol': '#242424',
         'charcolBlack': '#000000DB',
         'jetBlack': '#2f2f2f',
         'silver': '#ccc',
@@ -12,6 +13,7 @@ module.exports = {
         'spanishGray': '#969696',
         'silverGray': '#cacaca',
         'smokyGray': '#3c3c3c',
+        'darkGray-800': '#383838',
         'darkGray-700': '#1b1b1b',
         'darkGray-600':'#151515',
         'darkGray-200':'#919191',
@@ -25,6 +27,8 @@ module.exports = {
         'dimGray': '#696969',
         'mediumGray': '#8c8c8c',
         'lightGray': '#c4c4c4',
+        'lighterGray': '#cccccc',
+        'lighterGray-100': '#fff',
         'ashGray': '#757575',
         'sunsetOrange': '#f3a93c',
         'customOrange-600':'#FF9900',
