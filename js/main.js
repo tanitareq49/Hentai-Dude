@@ -35,3 +35,25 @@ document.addEventListener("click", (ev) => {
         mobileSearch.classList.remove("search-active");
     }
 });
+
+
+//scrool to top//
+const scrollToTopButton = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+  const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+  if (scrollPosition > totalHeight * 0.25) {
+    scrollToTopButton.classList.remove("hidden");
+  } else {
+    scrollToTopButton.classList.add("hidden");
+  }
+});
+
+scrollToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+  });
+});
+//end//
