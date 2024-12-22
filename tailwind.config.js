@@ -25,6 +25,7 @@ module.exports = {
         'dimGray': '#696969',
         'mediumGray': '#8c8c8c',
         'lightGray': '#c4c4c4',
+        'ashGray': '#757575',
         'sunsetOrange': '#f3a93c',
         'customOrange-600':'#FF9900',
         'customOrange-400':'#fca800',

@@ -1,105 +1,124 @@
 const loginBtn = document.querySelector("#login");
 const signInBtn = document.querySelector("#sign-in");
-const backdrop = document.querySelector("#backdrop")
+const loginTwo = document.querySelector("#login2");
+const signinTwo = document.querySelector("#sign-in2");
+
+const backdrop = document.querySelector("#backdrop");
 const modal = document.querySelector("#modal");
 const closeFormBtn = document.querySelector("#closeFormBtn");
+
 const tabs = document.querySelectorAll(".tab");
 const tabOneBtn = document.querySelector("#tabOne");
 const tabTwoBtn = document.querySelector("#tabTwo");
 const tabThreeBtn = document.querySelector("#tabThree");
+
 const tabOneContent = document.querySelector("#tabOneContent");
 const tabTwoContent = document.querySelector("#tabTwoContent");
 const tabThreeContent = document.querySelector("#tabThreeContent");
+
 const heading = document.querySelector("#heading");
 
-loginBtn.addEventListener("click", (ev)=>{
-    heading.innerHTML = "Sign In";
+function showModal(contentIndex, headingText) {
+    heading.innerHTML = headingText;
     modal.classList.remove("hidden");
     backdrop.classList.remove("hidden");
-    tabOneContent.classList.remove("hidden");
-    tabOneBtn.classList.add("active");
-    if(!tabTwoContent.classList.contains("hidden")) {
+
+    tabs.forEach((tab, index) => {
+        if (index === contentIndex) {
+            tab.classList.add("active");
+        } else {
+            tab.classList.remove("active");
+        }
+    });
+
+    // Show the corresponding content and hide the others
+    if (contentIndex === 0) {
+        tabOneContent.classList.remove("hidden");
         tabTwoContent.classList.add("hidden");
-    } 
-    if(!tabThreeContent.classList.contains("hidden")) {
         tabThreeContent.classList.add("hidden");
-    } 
-    if(tabTwoBtn.classList.contains("active")) {
-        tabTwoBtn.classList.remove("active");
-    }
-    if(tabThreeBtn.classList.contains("active")) {
-        tabThreeBtn.classList.remove("active");
-    }
-});
-
-signInBtn.addEventListener("click", (ev)=>{
-    heading.innerHTML = "Register";
-    modal.classList.remove("hidden");
-    backdrop.classList.remove("hidden");
-    tabTwoContent.classList.remove("hidden");
-    tabTwoBtn.classList.add("active");
-    if(!tabOneContent.classList.contains("hidden")) {
+    } else if (contentIndex === 1) {
+        tabTwoContent.classList.remove("hidden");
         tabOneContent.classList.add("hidden");
-    } 
-    if(!tabThreeContent.classList.contains("hidden")) {
         tabThreeContent.classList.add("hidden");
-    } 
-    if(tabOneBtn.classList.contains("active")) {
-        tabOneBtn.classList.remove("active");
+    } else if (contentIndex === 2) {
+        tabThreeContent.classList.remove("hidden");
+        tabOneContent.classList.add("hidden");
+        tabTwoContent.classList.add("hidden");
     }
-    if(tabThreeBtn.classList.contains("active")) {
-        tabThreeBtn.classList.remove("active");
-    }
-});
+}
 
-backdrop.addEventListener("click", ()=>{
+function hideModal() {
     backdrop.classList.add("hidden");
     modal.classList.add("hidden");
+}
+
+loginBtn.addEventListener("click", () => {
+    showModal(0, "Sign In");
 });
 
-closeFormBtn.addEventListener("click", ()=>{
-    backdrop.classList.add("hidden");
-    modal.classList.add("hidden");
+signInBtn.addEventListener("click", () => {
+    showModal(1, "Register");
 });
 
-tabs.forEach((tab, index)=>{
-    tab.addEventListener("click", (event)=> {
-        if(index === 0) {
-            heading.innerHTML = "Sign In";
-            tabOneContent.classList.remove("hidden");
-            if(!tabTwoContent.classList.contains("hidden")) {
-                tabTwoContent.classList.add("hidden");
-            }
-            if(!tabThreeContent.classList.contains("hidden")) {
-                tabThreeContent.classList.add("hidden");
-            }
+loginTwo.addEventListener("click", () => {
+    showModal(0, "Sign In");
+});
+
+signinTwo.addEventListener("click", () => {
+    showModal(1, "Register");
+});
+
+backdrop.addEventListener("click", () => {
+    hideModal();
+});
+
+closeFormBtn.addEventListener("click", () => {
+    hideModal();
+});
+
+tabThreeBtn.addEventListener("click", (ev) => {
+    heading.innerHTML = "Forgot Password";  
+    tabThreeContent.classList.remove("hidden"); 
+
+    if (!tabOneContent.classList.contains("hidden")) {
+        tabOneContent.classList.add("hidden");
+    }
+
+    if (!tabTwoContent.classList.contains("hidden")) {
+        tabTwoContent.classList.add("hidden");
+    }
+
+    tabs.forEach((btn) => {
+        btn.classList.remove('active');
+    });
+    tabThreeBtn.classList.add("active");
+
+    ev.preventDefault();
+});
+
+// Adding event listener to all tab buttons
+tabs.forEach((tab, index) => {
+    tab.addEventListener("click", (event) => {
+        // Prevent event propagation to avoid modal closing when clicking the tabs
+        event.stopPropagation();  // This prevents the event from bubbling up to the backdrop
+
+        if (index === 0) {
+            showModal(0, "Sign In");
         }
-        if(index === 1) {
-            heading.innerHTML = "Register";
-            tabTwoContent.classList.remove("hidden");
-            if(!tabOneContent.classList.contains("hidden")) {
-                tabOneContent.classList.add("hidden");
-            }
-            if(!tabThreeContent.classList.contains("hidden")) {
-                tabThreeContent.classList.add("hidden");
-            }
+        if (index === 1) {
+            showModal(1, "Register");
         }
-        if(index === 2) {
-            heading.innerHTML = "Forgot Password";
-            tabThreeContent.classList.remove("hidden");
-            if(!tabTwoContent.classList.contains("hidden")) {
-                tabTwoContent.classList.add("hidden");
-            }
-            if(!tabOneContent.classList.contains("hidden")) {
-                tabThreeContent.classList.add("hidden");
-            }
+        if (index === 2) {
+            showModal(2, "Forgot Password");
         }
+
         event.preventDefault();
+
         tabs.forEach((btn) => {
             if (btn !== tab) {
-              btn.classList.remove('active');
+                btn.classList.remove('active');
             }
-          });
+        });
         tab.classList.add("active");
     });
 });
