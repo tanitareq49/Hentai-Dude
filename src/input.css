@@ -9,7 +9,12 @@ body {
 .active {
   border-bottom: 2px solid #f3a93c;
   color: #fff;
-}    
+}      
+
+.active-two {
+  width: 100%;
+  opacity: 1;
+}
 
 .positioning {
   position: absolute;
@@ -43,4 +48,12 @@ body {
 .mobile-scroll::-webkit-scrollbar-thumb { 
   background-color: #f3c669; 
   border-radius: 100px; 
+}
+
+.gradient-bg {
+  background: repeating-linear-gradient(45deg, #e7e7e7, #e7e7e7 24px, #dadada 4px, #dadada 35px);
+}
+
+.gradient-bg:hover {
+  background: repeating-linear-gradient(45deg, #333, #333 24px, #393939 4px, #393939 35px);
 }

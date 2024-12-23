@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'custom-white':'#fff',
         'graphite': '#2b2b2b',
         'charcol': '#242424',
         'charcolBlack': '#000000DB',
@@ -34,10 +35,21 @@ module.exports = {
         'customOrange-600':'#FF9900',
         'customOrange-400':'#fca800',
         'customOrange-100':'#F4CD7B',
+        'darkGray-25':'#666',
+        'customBlue':"#33f",
+        'customBlue-400':"#1E90FF",
       },
       screens: {
-         "custom-md":"540px",
+         "custom-md":"552px",
+         "custom-md2":"1000px",
         '2xl': '1380px',
+      },
+      boxShadow: {
+        'custom': '1px 1px 4px #333',
+        "text-shadow": "1px 1px #000"
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.69) 90%, rgba(0, 0, 0, 0.9) 100%)',
       }
     },
   },
