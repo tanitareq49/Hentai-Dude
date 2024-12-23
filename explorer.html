@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hentai Dude</title>
+    <title>Explorer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
@@ -47,19 +47,19 @@
           Home
         </a>
         <div class="whitespace-nowrap bg-black lg:bg-transparent self-center lg:self-stretch w-full flex gap-[6px] lg:gap-4 justify-center lg:justify-around items-center flex-wrap lg:flex-nowrap mt-[54px] lg:mt-0">
-          <a class="py-[10px] lg:py-0 w-[120px] lg:w-full h-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="">
+          <a class="h-full py-[10px] lg:py-0 w-[120px] lg:w-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 cursor-pointer lg:hover:bg-charcol opacity-80 lg:opacity-100 lg:text-white text-[#c4c4c4] transition-all duration-300 ease-[cubic-bezier(0.25,_0.8,_0.5,_1)] hover:text-white capitalize lg:uppercase" href="">
             <i class="fa-solid fa-gamepad"></i>
             <span> Sex Games</span>
           </a>
-          <a class="py-[10px] lg:py-0 w-[120px] lg:w-full h-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="">
+          <a class="h-full py-[10px] lg:py-0 w-[120px] lg:w-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 cursor-pointer lg:hover:bg-charcol opacity-80 lg:opacity-100 lg:text-white text-[#c4c4c4] transition-all duration-300 ease-[cubic-bezier(0.25,_0.8,_0.5,_1)] hover:text-white capitalize lg:uppercase" href="">
             <i class="fa-solid fa-video"></i>
             <span> Live Sex</span>
           </a>
-          <a class="py-[10px] lg:py-0 w-[160px] lg:w-full h-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="">
+          <a class="py-[10px] lg:py-0 w-[160px] lg:w-full h-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 cursor-pointer lg:hover:bg-charcol opacity-80 lg:opacity-100 lg:text-white text-[#c4c4c4] transition-all duration-300 ease-[cubic-bezier(0.25,_0.8,_0.5,_1)] hover:text-white capitalize lg:uppercase lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="">
             <i class="fa-solid fa-video"></i>
             <span>Free XXX Videos</span>
           </a>
-          <a class="py-[10px] lg:py-0 w-[120px] lg:w-full h-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 lg:shadow-[inset_10px_0_0px_-9px_#252525]" href="">
+          <a class="h-full py-[10px] lg:py-0 w-[120px] lg:w-full rounded-sm lg:rounded-none border-2 border-[rgba(58,60,63,.7)] lg:border-none flex justify-center items-center gap-2 cursor-pointer lg:hover:bg-charcol opacity-80 lg:opacity-100 lg:text-white text-[#c4c4c4] transition-all duration-300 ease-[cubic-bezier(0.25,_0.8,_0.5,_1)] hover:text-white capitalize lg:uppercase" href="">
             <span>AI Jerk Off 🫦</span>
           </a>
         </div>
@@ -69,25 +69,28 @@
         </a>
       </div>
     </div>
-    <div class="">
-        <ul class="bg-[#1b1b1bd4] flex gap-2 justify-evenly text-ashGray ">
-            <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
-                <a href="">
+    <div id="tabsBackdrops" class="fixed top-0 left-0 right-0 bottom-0 bg-[#0000008c] hidden z-10 transition-opacity duration-700 delay-700 ease-linear"></div>
+    <div class=" w-[300px] h-[100px] bg-[#1f1f1f] mx-auto my-[10px] lg:hidden">
+    </div>
+    <div class="md:absolute left-0 right-0 top-[155px] z-10 lg:static">
+        <ul class="bg-[#1b1b1bd4] flex flex-col md:flex-row  md:gap-2 justify-evenly text-ashGray tab-btns">
+            <li id="tagsModal" class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
+                <button>
                     <i class="fa fa-tags" aria-hidden="true"></i>
                     <span>Tags</span>
-                </a>
+                </button>
             </li>
-            <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
-                <a href="">
+            <li id="studioModal" class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
+                <button>
                     <i class="fa-solid fa-film"></i>
                     <span>Studios</span>
-                </a>
+                </button>
             </li>
-            <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px] mr-8">
-                <a href="">
+            <li id="excluderModal" class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px] md:mr-8">
+                <button>
                     <i class="fa fa-ban" aria-hidden="true"></i>
                     <span>Excluder</span>
-                </a>
+                </button>
             </li>
             <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
                 <a href="">
@@ -95,14 +98,379 @@
                     <span>Reset All</span>
                 </a>
             </li>
-            <li class="px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
+            <li class="sort-btn px-[15px] py-[13px] bg-[#1b1b1b] w-full flex justify-center border-l border-r border-[#4040409e] text-[17px]">
                 <a href="">
                     <i class="fas fa-sort-amount-down"></i>
                     <span>Sort</span>
                 </a>
             </li>
         </ul>
+        <!-- Sort -->
+     <div class="bg-[#303030] px-2 rounded-md shadow-custom-bxo w-full md:w-1/6 absolute right-4 top-12 hidden sortItems-container">
+      <ul class="flex flex-col gap-2 p-4">
+        <li class="text-lightGray text-base font-normal hover:text-white"> <a href="#">Recent Upload</a></li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="#">Old Upload</a></li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="">Most Viewed</a> </li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="#">Least Viewed</a></li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="#">Most Liked</a></li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer">Least Liked</li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="#">Best Liked</a></li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="#">Worst Liked</a></li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="#">Newest Release</a></li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="#">Oldest Release</a></li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="#">Alphabetical (A-Z)</a></li>
+        <li class="text-lightGray text-base font-normal hover:text-white cursor-pointer"><a href="#">Alphabetical (Z-A)</a></li>
+      </ul>
+     </div>
     </div>
+    <!-- Tags modal -->
+     <div id="tagsContent" class="hidden max-w-[700px] w-full bg-darkGray-400 fixed top-14 left-1/2 transform -translate-x-1/2 p-4 rounded-md z-50">
+      <div class="py-4">
+        <strong class="text-sm text-lighterGray-100">Tags</strong>
+      </div>
+      <div class="h-[300px] overflow-y-auto modal-scroll border-b border-[#303030]">
+        <div class="flex gap-4 items-center px-6 my-4">
+          <strong class="text-sm text-lighterGray-100">Broad <br> search</strong>
+          <div class="toggleIcon bg-darkGray-600 w-[60px] h-[30px] rounded-full relative after:content-[''] after:w-8 after:h-8 after:bg-customOrange-600 after:absolute after:top-0 after:left-0 after:rounded-full cursor-pointer transition-all duration-500 ease-in"></div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+        </div>
+      </div>
+      <!-- Modal Footer -->
+      <div class="p-[15px] flex gap-2 items-center justify-self-end">
+        <a href="" class="bg-darkGray-500 uppercase text-base font-medium text-[#f3c669] px-4 py-2 bg-opacity-10 rounded-sm">apply</a>
+        <button class="cancelBtn cursor-pointer text-sm text-lighterGray hover:text-white">Cancel</button>
+      </div>
+     </div>
+    <!-- Studio modal -->
+     <div id="studioContent" class="hidden max-w-[700px] w-full bg-darkGray-400 fixed top-14 left-1/2 transform -translate-x-1/2 p-4 rounded-md z-50">
+      <div class="py-4">
+        <strong class="text-sm text-lighterGray-100">Tags</strong>
+      </div>
+      <div class="h-[300px] overflow-y-auto modal-scroll border-b border-[#303030]">
+        <div class="flex gap-4 items-center px-6 my-4">
+          <strong class="text-sm text-lighterGray-100">Broad <br> search</strong>
+          <div class="toggleIcon bg-darkGray-600 w-[60px] h-[30px] rounded-full relative after:content-[''] after:w-8 after:h-8 after:bg-customOrange-600 after:absolute after:top-0 after:left-0 after:rounded-full cursor-pointer transition-all duration-500 ease-in"></div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">
+            @ OZ </a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">
+            37c-Binetsu</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+        </div>
+      </div>
+      <!-- Modal Footer -->
+      <div class="p-[15px] flex gap-2 items-center justify-self-end">
+        <a href="" class="bg-darkGray-500 uppercase text-base font-medium text-[#f3c669] px-4 py-2 bg-opacity-10 rounded-sm">apply</a>
+        <button class="cancelBtn cursor-pointer text-sm text-lighterGray hover:text-white">Cancel</button>
+      </div>
+     </div>
+    <!-- Excluder modal -->
+     <div id="excluderContent" class="hidden max-w-[700px] w-full bg-darkGray-400 fixed top-14 left-1/2 transform -translate-x-1/2 p-4 rounded-md z-50">
+      <div class="py-4">
+        <strong class="text-sm text-lighterGray-100">Tags</strong>
+      </div>
+      <div class="h-[300px] overflow-y-auto modal-scroll border-b border-[#303030]">
+        <div class="flex gap-4 items-center px-6 my-4">
+          <strong class="text-sm text-lighterGray-100">Broad <br> search</strong>
+          <div class="toggleIcon bg-darkGray-600 w-[60px] h-[30px] rounded-full relative after:content-[''] after:w-8 after:h-8 after:bg-customOrange-600 after:absolute after:top-0 after:left-0 after:rounded-full cursor-pointer transition-all duration-500 ease-in"></div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">1080p</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">2b</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">3D</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">69</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Acrobat</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Action</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adult</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Adventure</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Age Difference</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ahegao</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Alien</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Amateur</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Anal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Angel</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> Animal</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Anime</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aphrodisiac</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Aquaman</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">arabian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Art</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]"> asian</a>
+          <a href="#" class="py-[6px] px-[15px] rounded-full text-lightGray bg-darkGray-500 bg-opacity-30 hover:text-lighterGray-100 hover:underline capitalize border border-[#303030]">Ass rubbing</a>
+        </div>
+      </div>
+      <!-- Modal Footer -->
+      <div class="p-[15px] flex gap-2 items-center justify-self-end">
+        <a href="" class="bg-darkGray-500 uppercase text-base font-medium text-[#f3c669] px-4 py-2 bg-opacity-10 rounded-sm">apply</a>
+        <button class="cancelBtn cursor-pointer text-sm text-lighterGray hover:text-white">Cancel</button>
+      </div>
+     </div>
+
     <div id="modal" class="absolute top-0 left-0 right-0 bottom-0 z-10 flex items-center justify-center hidden">
       <div id="backdrop" class="fixed top-0 left-0 right-0 bottom-0 bg-[#0000008c] hidden z-10"></div>
       <form class="fixed z-20 bg-charcolBlack opacity-80 min-w-[300px] max-w-[300px] min-h-[410px] px-4" action="">
@@ -142,8 +510,6 @@
           </div>
         </div>
       </form>
-    </div>
-    <div class="mt-[105px] sm:mt-[110px] w-[300px] h-[100px] bg-[#1f1f1f] mx-auto my-[10px] lg:hidden">
     </div>
     <main class="max-w-screen-2xl mx-auto px-4">
       <section class="flex gap-1 my-4">
@@ -320,7 +686,7 @@
     <div class="w-[320px] h-[270px] mx-auto bg-[#1f1f1f] lg:hidden my-[23px] p-[10px]">
 
     </div>
-    <footer class="bg-darkGray-600">
+    <footer class="bg-darkGray-600 pt-10">
       <div class="max-w-screen-2xl mx-auto px-4">
         <div
           class="hidden md:flex flex-wrap items-center justify-center lg:justify-between"
@@ -558,109 +924,16 @@
         </div>
       </div>
     </footer>
+    <div class="">
+      <button id="scrollToTop" class="text-[30px] opacity-0 transition-opacity duration-300 ease-in cursor-pointer fixed bottom-[20px] right-4 w-14 h-14 bg-[#f3c669] flex items-center justify-center z-20 text-white rounded-full">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </div>
 
     <script src="./js/main.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/exmodal.js"></script>
+    <script src="./js/scrolltotop.js"></script>
   </body>
 </html>
-<div class="">
-  <div class="py-[15px] px-[16px] text-base text-ashGray">
-    <p>INFORMATION</p>
-  </div>
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    <i class="fa fa-check-square" aria-hidden="true"></i>
-    <span>2257</span>
-  </a>
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    <i class="fa fa-gavel" aria-hidden="true"></i>
-    <span>DMCA</span>
-  </a>
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    <i class="fa fa-user-secret" aria-hidden="true"></i>
-    <span>Privacy Policy</span>
-  </a>                           
-</div>
-<div class="">
-  <div class="py-[15px] px-[16px] text-base text-ashGray">
-    <p>SUPPORT AND HELP</p>
-  </div>
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    <i class="fa fa-envelope" aria-hidden="true"></i>
-    <span>Contact Us</span>
-  </a>                     
-</div>
-<div class="">
-  <div class="py-[15px] px-[16px] text-base text-ashGray">
-    <p>CONNECT</p>
-  </div>
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    <i class="fa-brands fa-facebook-f"></i>
-    <span>Facebook</span>
-  </a>                     
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    <i class="fa-brands fa-twitter"></i>
-    <span>Twitter</span>
-  </a>                     
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    <i class="fa-brands fa-discord"></i>
-    <span>Discord</span>
-  </a>                     
-</div>
-<div class="">
-  <div class="py-[15px] px-[16px] text-base text-ashGray">
-    <p>PARTNERS</p>
-  </div>
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Hentai Videos
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    MrPornGeek
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Porn Comics
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Hentai Comics
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Hentai Porn
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    hentai sex games
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Hentai List
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Hentai Sex
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Hentai Porn
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Uncensored Hentai
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Thepornlist
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Porn Games
-  </a>                                      
-</div>
-<div class="">
-  <div class="py-[15px] px-[16px] text-base text-ashGray">
-    <p>FEATURED VIDEOS</p>
-  </div>
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Hanime
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Hentai Haven
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Gelbooru
-  </a>                                      
-  <a href="#" class="py-[15px] px-[16px] flex items-center gap-6 text-white text-base font-medium cursor-pointer">
-    Danbooru
-  </a>                                                                         
-</div>
