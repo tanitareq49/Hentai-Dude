@@ -731,10 +731,6 @@ video {
   margin-top: 54px;
 }
 
-.mt-\[57px\] {
-  margin-top: 57px;
-}
-
 .mt-\[65px\] {
   margin-top: 65px;
 }
@@ -1301,11 +1297,6 @@ video {
   padding-right: 16px;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1678,6 +1669,11 @@ body {
 .hover\:bg-darkGray-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(56 56 56 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#404040\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:fill-customOrange-400:hover {
